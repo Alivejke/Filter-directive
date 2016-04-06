@@ -1,0 +1,9 @@
+<div ng-switch="isObject">
+    <div ng-switch-when="true">
+        <div class=sub_node ng-click="changeState()">{{key}}</div>
+        <div collapsed="{{collapsed}}" tree json=value search=search></div>
+    </div>
+    <div class="node" ng-switch-default match="{{match}}">
+        {{key + ':' + value}}
+    </div>
+</div>
